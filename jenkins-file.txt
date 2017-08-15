@@ -1,9 +1,7 @@
 pipeline
 { 
-agent
-{
-label "windows_slave"
-}
+agent any
+
   stages
   {
     stage('build')
