@@ -10,13 +10,17 @@ agent
     maven "maven"
     }
   stages
-  {
-    stage('build')
-    {
-      steps 
-      {
-      bat 'mvn clean install'
+ 
+}
+
+stage('deploy'){
+      
+      steps {
+      
+        bat 'xcopy /y C:\Program Files (x86)\jenkins_slave\workspace\GOL_PILELINE\gameoflife-web\target "C:\Program Files\Apache Software Foundation\Tomcat 7.0\webapps" '
+      
       }
-    }
-}
-}
+    } 
+
+    
+  } 
