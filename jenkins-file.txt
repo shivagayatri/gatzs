@@ -6,8 +6,8 @@ agent
   }
   tools
   {
-    jdk "(JDK)jdk"
-    maven "(Maven)maven"
+    jdk "jdk"
+    maven "Maven"
     }
   stages
   {
