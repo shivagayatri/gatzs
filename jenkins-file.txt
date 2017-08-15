@@ -1,7 +1,14 @@
 pipeline
 { 
 agent any
-
+{ 
+  label"windows_slave"
+  }
+  tools
+  {
+    jdk "jdk"
+    maven "MAVEN_HOME"
+    }
   stages
   {
     stage('build')
